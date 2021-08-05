@@ -100,7 +100,7 @@ You can add some props to ```NextNProgress``` like color, height, key, ref, star
 <NextNProgress height={6} color="#4338C9" />
 ```
 
-This will make the progress bar thicker and purple in color. Feel free to try out different colors and styles. Drop your favourite style for the progress bar in the comments 👇🏻
+This will make the progress bar thicker and purple in color. Feel free to try out different colors and styles. Drop your favorite style for the progress bar in the comments 👇🏻
 
 Useful links -
 
