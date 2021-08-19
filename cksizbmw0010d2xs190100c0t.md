@@ -1,4 +1,4 @@
-## Delete all commit history in GitHub!
+## How to delete all commit history in GitHub?
 
 If you ever pushed your credentials into GitHub and you had many commits after that incident then it would be a big problem removing the credentials from the history. So one of the options would be to delete the whole commit history. In this tutorial we are going to see how to do that 😉
 
