@@ -153,12 +153,10 @@ Congratulations, you have completed this crash course on git and GitHub 🥳.
 
 If you want to contribute to an open-source project check [this](https://medium.com/weekly-webtips/how-to-contribute-to-an-open-source-project-and-make-a-pr-cc92f6c9831d).
 
-Social links
+***Useful links -***
 
-[Instagram](http://instagram.com/avneesh__agarwal)
+[Github](https://github.com)
 
-[LinkedIn](https://www.linkedin.com/in/avneesh-agarwal-78312b20a/)
+[Git](https://git-scm.com)
 
-[Github](https://github.com/avneesh0612)
-
-[Linktree](https://linktr.ee/avneesh_agarwal)
+[All socials](https://avneesh-links.vercel.app/)
