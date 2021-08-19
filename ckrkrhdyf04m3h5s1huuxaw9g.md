@@ -83,12 +83,13 @@ Congratulations 🥳. You have created your first Pull Request.
 
 [React spring](https://github.com/pmndrs/react-spring)
 
+
 ***Useful links -***
 
 [Github](https://github.com/)
 
 [Git](https://git-scm.com/)
 
-[Git and GitHub Crash Course](https://medium.com/geekculture/git-and-github-crash-course-b44f4885ff66)
+[Git and GitHub Crash Course](https://avneesh0612.hashnode.dev/git-and-github-crash-course)
 
 [All socials](https://avneesh-links.vercel.app/)
