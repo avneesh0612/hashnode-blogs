@@ -40,7 +40,7 @@ Now you can add it to your Readme as well. Here is a sample of how it is added i
 ```
 ## 📝 License
 
-Copyright © 2021 [Avneesh Agarwal](https://github.com/avneesh0612).
+Copyright © 2021 [Avneesh Agarwal](https://github.com/avneesh0612). <br />
 This project is [MIT](https://github.com/avneesh0612/next-progress-bar/blob/main/LICENSE) licensed.
 ```
 
