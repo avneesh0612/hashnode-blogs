@@ -61,7 +61,7 @@ When you submit the form it will add the data to Firebase. Adding data to the Fi
 ```
  db.collection("parcels").add({
       pickupaddress: "your address",
-      zip: "zip code,
+      zip: "zip code",
       weight: "weight of the package",
     });
 ```
