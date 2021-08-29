@@ -4,7 +4,7 @@ Hey all, during August I worked on  [**Voyagger**](https://www.voyagger.tech/) f
 
 ### Inspiration
 When I read about this competition I started brainstorming ideas when it struck me- A hassle-free delivery service. These tough times have made us all aware of the importance of our loved ones and through this app, users can bring a smile to their family and friends' faces by sending them their favorite delicacy, medicines, or a simple heartfelt gift.
-### The Tech I am using
+### The Tech 💻 I am using
 
 Framework:  [Next.js](https://nextjs.org) 
 
@@ -21,7 +21,7 @@ State management:  [Redux](https://redux.js.org)
 Animations:  [Framer Motion](https://www.framer.com/motion)
 
 
-### Authentication
+### Authentication 🔒
 To use most of the services in the app, you will need to be authenticated first. The authentication system is built with [Auth0](https://auth0.com). If you want to add auth0 authentication to your app checkout ["Add auth0 authentication to your Next.js app in less than 5 🖐🏻 minutes"](https://avneesh0612.hashnode.dev/add-auth0-authentication-to-your-nextjs-app-in-less-than-5-minutes) 
 
 **Biometrics**
@@ -29,7 +29,7 @@ To use most of the services in the app, you will need to be authenticated first.
 I have added a biometrics login where you can log in through your fingerprint or other biometrics. This is a feature present in Auth0.
 
 
-### Order food
+### Order food 😋
 
 All the food categories and items have been stored in the database instead of hardcoding them so that none can manipulate the data like the price of the product.
 
@@ -51,7 +51,7 @@ After placing the order you can view all the placed items on the order page.
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629444741707/rngQbBJqi.png)
 
-### Send a parcel
+### Send a parcel 📦
 The sending parcel page will show you a simple form where you need to add a few details required for pick up and delivery of the parcel like your address, the recipient's address, phone number, etc.
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629446683505/cZXJ7eJrK.png)
@@ -76,7 +76,7 @@ Now you can see all the parcels you have added, on the parcel tracking page. If 
 navigator.clipboard.writeText("Text you want to copy");
 ```
 
-### Books
+### Books 📚
 I am using the [Google books API](https://developers.google.com/books/docs/v1/using) to get so many books. Here is an example endpoint to get all the books-
 
 ```
@@ -87,7 +87,7 @@ https://www.googleapis.com/books/v1/volumes?q=Fiction
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629447329742/3EG9EEw3_.png)
 
 
-### Order medicines
+### Order medicines 💊
 The order medicines page is very similar to the order food page, the only difference being in the products.
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629451017517/BL1Vuwmwi.png)
 
