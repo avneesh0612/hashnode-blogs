@@ -17,7 +17,7 @@ git add .
 
 **Commit the changes**
 ```
-git commit -am "commit message"
+git commit -m "commit message"
 ```
 
 **Delete the branch**
