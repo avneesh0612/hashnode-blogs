@@ -4,7 +4,7 @@
 I am 13 year old web developer, content creator, technical writer, and student. I love to make beautiful and interactive websites with Next.js. I also like to document my journey and teach others by writing articles about what I am learning.
 
 ## How I started Programming?
- Last year (2020) I saw a video on youtube with the title "Let's Build a GOOGLE Clone with REACT JS for Beginners!". I was fascinated to see that you can build such awesome things by learning to program. So I started learning to learn about web development.
+ Last year (2020) I saw a video on youtube with the title "Let's Build a GOOGLE Clone with REACT JS for Beginners!". I was fascinated to see that you can build such awesome things by learning to program. So I started learning about web development.
 
 ## How I became a technical writer?
 A friend of mine who was into technical writing suggested me to start writing. With the help of his guidance, I wrote my first article on Medium. Ever since I have been writing articles on different platforms but at the end loving Hashnode the most.
