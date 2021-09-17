@@ -11,7 +11,7 @@ Open source is a commonly used term for the code which is publically accessible 
 - Scalable
 - Secure as code is public
 - Flexible
-- Fast
+- Faster development 
 
 ### Cons of Open Source
 - Needs maintenance
