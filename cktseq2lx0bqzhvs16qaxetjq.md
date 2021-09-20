@@ -2,7 +2,7 @@
 
 **Hey folks 👋🏻,**
 
-If you have seen my past articles then you must have seen that many of the articles are related to [Next.js](https://nextjs.org/),  [React](https://reactjs.org/), or  [tailwind ](https://tailwindcss.com/) but I never really explained what they exactly are, so I have decided to write an article on that today!
+If you have seen my past articles then you must have seen that many of the articles are related to [Next.js](https://nextjs.org/),  [React](https://reactjs.org/), or  [Tailwind ](https://tailwindcss.com/) but I never really explained what they exactly are, so I have decided to write an article on that today!
 
 ![started](https://c.tenor.com/r3XdvPsAV3kAAAAC/despicable-me-minions.gif)
 
