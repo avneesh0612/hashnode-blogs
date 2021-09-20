@@ -2,13 +2,12 @@
 
 ### What is Open Source?
 
-Open source is a commonly used term for the code which is publically accessible and people can see, edit, and share the data. In open source projects, developers from all around the world can contribute to the project and make it better.
+Open source is a commonly used term for the code which is publically accessible and people can see, edit, and share the data. In open-source projects, developers from all around the world can contribute to the project and make it better.
 
 ### Benefits of Open Source
 
 - Lower cost
 - Higher quality software and code
-- Scalable
 - Secure as code is public
 - Flexible
 - Faster development 
