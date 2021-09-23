@@ -41,10 +41,4 @@ Finally,
 
 **Useful links -**
 
-[Nextjs](https://nextjs.org)
-
-[React](https://reactjs.org/)
-
-[TailwindCSS](https://tailwindcss.com/)
-
 [All socials](https://avneesh-links.vercel.app/)
