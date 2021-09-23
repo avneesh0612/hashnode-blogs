@@ -41,4 +41,6 @@ Finally,
 
 **Useful links -**
 
+[Join Byteslash Community](https://discord.gg/gnBPzpNF)
+
 [All socials](https://avneesh-links.vercel.app/)
