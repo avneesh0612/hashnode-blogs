@@ -94,3 +94,10 @@ const Home = () => {
 export default Home;
 ```
  [Install](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets) 
+
+**Useful links-**
+
+ [VS Code](https://code.visualstudio.com/) 
+
+ [Connect with me](https://avneesh-links.vercel.app/) 
+
