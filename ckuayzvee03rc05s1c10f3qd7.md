@@ -287,3 +287,5 @@ Here, you have to replace the empty array with your labels. After you hit enter 
  [Learn more about Git and GitHub](https://blog.avneesh.tech/series/git-and-github)
 
 [Connect with me](https://avneesh-links.vercel.app/)  
+
+[Nicholas Carrigan's way](https://www.nhcarrigan.com/notes/#/transfer-labels/index)
