@@ -243,6 +243,7 @@ const videoHandler = (control) => {
 ```
 
 **Changing the icon**
+
 Where we have the play icon, now we will render it based on a condition with the help of a ternary operator -
 
 ```
