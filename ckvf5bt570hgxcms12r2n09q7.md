@@ -222,6 +222,7 @@ Now in the play.svg image, we will add an onClick function to start the video.
 If you click on the icon the video will play!
 
 **Changing the icon based on the playing/paused state**
+
 To achieve this I am going to use the useState hook. Create a playing state like this-
 
 ```
@@ -267,6 +268,7 @@ Now, we can play and pause the video 🥳
 
 
 ### Forwarding and reverting the video
+
 I am going to create very simple functions for this-
 
 ```
