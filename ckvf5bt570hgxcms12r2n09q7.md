@@ -9,7 +9,7 @@ Wassup guys, in this tutorial we are going to see how to build a custom video pl
 ### Create a new react app
 
 ```
-npx create-react-video-app custom-video-player
+npx create-react-app custom-video-player
 ```
 
 ### Cleanup
