@@ -271,7 +271,7 @@ Remove the hardcoded values for the question-
     Question {currentQuestion + 1} of {questions.length}
   </h4>
   <div className="mt-4 text-2xl text-white">
-    {questions[currentQuestion].questionText}
+    {questions[currentQuestion].question}
   </div>
 </div>
 ```
@@ -406,7 +406,7 @@ To do this we are going to render the page based on showScore's value like this-
           Question {currentQuestion + 1} of {questions.length}
         </h4>
         <div className="mt-4 text-2xl text-white">
-          {questions[currentQuestion].questionText}
+          {questions[currentQuestion].question}
         </div>
       </div>
       <div className="flex flex-col w-full">
