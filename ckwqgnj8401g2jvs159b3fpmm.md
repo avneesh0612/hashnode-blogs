@@ -186,7 +186,7 @@ Hope you found this tutorial useful and stay tuned for more of these web 3.0 tut
 
 ### Useful links
 
- [GitHub repo](Link) 
+ [GitHub repo](https://github.com/avneesh0612/metamask-next) 
 
 [Moralis](https://moralis.io/) 
 
