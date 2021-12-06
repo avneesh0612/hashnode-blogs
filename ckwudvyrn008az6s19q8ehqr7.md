@@ -12,7 +12,7 @@ For the readers who don't know about hashnode here is a little brief on what is 
 
 > Hashnode is a free developer blogging platform that allows you to publish articles on your domain and helps you stay connected with a global developer community.
 
-If you want to know more about hashnode, check out there [website](https://hashnode.com/@avneesh0612/joinme).
+If you want to know more about hashnode, check out their [website](https://hashnode.com/@avneesh0612/joinme).
 
 
 ## Become a Hashnode Ambassador
