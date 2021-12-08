@@ -30,7 +30,7 @@ Now we need to wait for a few minutes for everything to set up. In the meanwhile
 
 ### Creating a Twitter app
 
-Go to  [Twitter developers](developer.twitter.com), if you don't have a developer account then sign up for one otherwise login. 
+Go to  [Twitter developers](https://developer.twitter.com), if you don't have a developer account then sign up for one otherwise login. 
 
 After signing in click on `Create App`. Then, give your app a name
 
