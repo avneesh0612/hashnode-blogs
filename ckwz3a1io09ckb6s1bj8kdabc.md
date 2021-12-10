@@ -356,4 +356,4 @@ To extend your knowledge about svelte check out this video by @[James Q Quick](@
 
 [James' channel](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw)
 
-[Connect with Me](https://avneesh-links.netlify.app) 
+[Connect with Me](https://links.avneesh.tech/) 
