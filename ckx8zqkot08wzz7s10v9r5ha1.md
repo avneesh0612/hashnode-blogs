@@ -123,4 +123,4 @@ Hope you found this article useful. See ya next time ✌️
 
 [Next.js SEO course](https://nextjs.org/learn/seo/introduction-to-seo)
 
-[Connext with me](https://links.avneesh.tech/)
+[Connect with me](https://links.avneesh.tech/)
