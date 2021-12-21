@@ -25,7 +25,7 @@ npx tailwindcss init -p
 
 Configuring paths-
 
-Inside `tailwind.config.jd` replace the content with this-
+Inside `tailwind.config.js` replace the content with this-
 
 ```
 module.exports = {
