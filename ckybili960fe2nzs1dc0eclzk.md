@@ -1,6 +1,6 @@
-## Make your first Crypto Token with ThirdWeb 🤯
+## Make your first Crypto with ThirdWeb 🤯
 
-Have you ever wondered how amazing it would be to create your crypto? So, in this article let's build our very first crypto token!
+Have you ever wondered how amazing it would be to create your crypto? So, in this article let's build our very first crypto!
 
 ## Setup
 Create a new folder-
@@ -124,7 +124,7 @@ You will now see your app address-
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641986218189/E-WpBbIJD.png)
 
-## Creating and deploying our crypto token 
+## Creating and deploying our crypto
 
 Create a new file `deploy-token.js` and paste in the following-
 
@@ -228,7 +228,7 @@ You can also send these tokens to your friends or anyone you like :D
 
 ## Conclusion
 
-@[thirdweb](@thirdweb) is a great way to build web3 stuff, hope you found this article useful and made your first crypto token. See ya in the next one ✌️
+@[thirdweb](@thirdweb) is a great way to build web3 stuff, hope you found this article useful and made your first crypto. See ya in the next one ✌️
 
 
 ### Useful links
