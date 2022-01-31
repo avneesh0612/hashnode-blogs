@@ -11,7 +11,7 @@ Inscribe is a DAO for bloggers. Inscribe lets you connect with like-minded peopl
 
 ## 🪙What is a DAO?
 
-Dao stands for "Distributed autonomous organization" it is like a decentralized community where you can get an NFT inclusive to the community, vote for certain things in the community, get crypto of the community through AirDrops.
+Dao stands for "Decentralized autonomous organization" it is like a decentralized community where you can get an NFT inclusive to the community, vote for certain things in the community, get crypto of the community through AirDrops.
 
 ## 🤓 Walkthrough and the code 
 
