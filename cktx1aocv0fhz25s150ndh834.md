@@ -16,7 +16,7 @@ Why think about the problem, solve it, and then type the code, when you can type
 Do you know how fun it is to just watch countless tutorials on a sofa, without taking notes? 
 
 ### Stay in your cocoon 
-Socializing, building networks, joining communities? NAH. Better stay in my cocoon and game all day. Just never touch social media platforms like discord, Instagram, Twitter for good use.
+Socializing, building networks, joining communities? NAH. Better stay in my cocoon and game all day. Just never touch social media platforms like discord, Instagram, or Twitter for good use.
 
 ### Don’t Accept Feedback
 Only good programmers ask others from various communities, to give feedback on what they made. This is precisely what you should avoid!
@@ -25,14 +25,14 @@ Only good programmers ask others from various communities, to give feedback on w
 Always think you know everything and never Google a problem or try to research about it. You know it, spend 10 days on a bug instead of getting the answer in 10 minutes.
 
 ### Don't contribute to open source
-Why contribute to the open-source projects and have a look at how their code? Just look at your code and follow your code practice!
+Why contribute to the open-source projects and have a look at how their code is? Just look at your code and follow your code practice!
 
 ### Don't document your journey
-A great thing that good devs do is documenting their journey.
+A great thing that good devs do is document their journey.
 
 > Teaching is a great way to keep learning.
 
-But this is what are we are trying not to do!
+But this is what we are trying not to do!
 
 
 Finally,
