@@ -38,9 +38,4 @@ But this is what we are trying not to do!
 Finally,
 **Don't follow me for more awesome tips and tutorials**
 
-
-**Useful links -**
-
-[Join Byteslash Community](https://discord.gg/gnBPzpNF)
-
-[All socials](https://avneesh-links.vercel.app/)
+[Connect with me](https://avneesh-links.vercel.app/)
