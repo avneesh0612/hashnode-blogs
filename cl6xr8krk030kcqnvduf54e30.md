@@ -73,7 +73,7 @@ const wagmiClient = createClient({
 });
 ```
 
-You need to edit your chain from Mumbai to the chain that you want to use. We are using the thirdweb RPC here, so if you change the chain you need to use the respective RPC as well. You can get details of [RPCs here](https://thirdweb.com/dashboard/rpc).
+You need to edit your chain from Mumbai to the chain that you want to use. We are using the thirdweb RPC here, so if you change the chain you need to use the respective RPC as well. You can get details of all [RPCs here](https://thirdweb.com/dashboard/rpc).
 
 If you want to customize the theme of the button just pass `theme={darkTheme()}` in the `RainbowKitProvider` and import darkTheme from rainbowkit:
 
