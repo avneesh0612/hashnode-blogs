@@ -1,14 +1,14 @@
-# How to use RainbowKit with Thirdweb 🌈
+# How to use RainbowKit with thirdweb 🌈
 
 # Introduction
 
-In this guide, we are going to see how to use RainbowKit with Thirdweb! I am going to create a Next.js app and show how the users can connect their wallet with the amazing UX and UI of RainbowKit and then claim an NFT from an NFT drop that will be created using Thirdweb! Let's get started
+In this guide, we are going to see how to use RainbowKit with thirdweb! I am going to create a Next.js app and show how the users can connect their wallet with the amazing UX and UI of RainbowKit and then claim an NFT from an NFT drop that will be created using thirdweb! Let's get started
 
 # What is RainbowKit?
 
 RainbowKit is a React library that allows a great UI and UX to connect to wallets on the ETH network as well as some other L2s with just a few lines of code!
 
-# What is Thirdweb?
+# What is thirdweb?
 
 [thirdweb](https://thirdweb.com/) is a platform that lets you deploy smart contracts without having to know Solidity, you can do it by using TypeScript, Python or Go or even without writing any code.
 
@@ -97,7 +97,7 @@ You also need to import it from rainbow kit like this:
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 ```
 
-# Adding Thirdweb
+# Adding thirdweb
 
 ## Creating a test drop
 
@@ -125,7 +125,7 @@ Once you have uploaded your nfts, go to the claim phase and add a claim phase wi
 
 ## Create a claim button
 
-To use Thirdweb in our app, we need to wrap our app in the ThirdwebProvider as well. I am going to create a custom component which uses the ThirdwebSdk with some props:
+To use thirdweb in our app, we need to wrap our app in the ThirdwebProvider as well. I am going to create a custom component which uses the ThirdwebSdk with some props:
 
 ```typescript
 function ThirdwebProvider({
@@ -255,7 +255,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 export default MyApp;
 ```
 
-Now that we have Thirdweb configured, let's add a button to claim these NFTs!
+Now that we have thirdweb configured, let's add a button to claim these NFTs!
 
 In `pages/index.tsx` add the following 2 hooks:
 
