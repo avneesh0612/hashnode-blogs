@@ -1,35 +1,42 @@
-## How to use RainbowKit with Thirdweb 🌈
+# How to use RainbowKit with Thirdweb 🌈
 
-#  Introduction
+# Introduction
+
 In this guide, we are going to see how to use RainbowKit with Thirdweb! I am going to create a Next.js app and show how the users can connect their wallet with the amazing UX and UI of RainbowKit and then claim an NFT from an NFT drop that will be created using Thirdweb! Let's get started
 
 # What is RainbowKit?
-RainbowKit is a React library that allows a great UI and UX to connect to wallets on the ETH network as well as some other L2s with just a few lines of code! 
+
+RainbowKit is a React library that allows a great UI and UX to connect to wallets on the ETH network as well as some other L2s with just a few lines of code!
 
 # What is Thirdweb?
+
 [thirdweb](https://thirdweb.com/) is a platform that lets you deploy smart contracts without having to know Solidity, you can do it by using TypeScript, Python or Go or even without writing any code.
 
 # Setup
 
 ## Creating a Next.js App
+
 I am going to use Next.js for this particular demo but you can also go with react! So run this command to start up a new Next.js app with ts:
 
-```
+```bash
 npx create-next-app thirdweb-rainbow --ts
 ```
 
-## Installing the required dependencies 
+## Installing the required dependencies
+
 We are going to need some packages for using RainbowKit and thirdweb so let's install them:
 
-```
-yarn add @rainbow-me/rainbowkit @thirdweb-dev/react @thirdweb-dev/sdk ethers wagmi
+```bash
+npm i @rainbow-me/rainbowkit @thirdweb-dev/react @thirdweb-dev/sdk ethers wagmi # npm
+
+yarn add @rainbow-me/rainbowkit @thirdweb-dev/react @thirdweb-dev/sdk ethers wagmi # yarn
 ```
 
 # Adding RainbowKit Connect Wallet Button
 
 To use the RainbowKit connect button we first need to wrap our app in Wagmi and Rainbow kit provider like this:
 
-```
+```typescript
  <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider chains={chains}>
         <Component {...pageProps} />
@@ -39,12 +46,18 @@ To use the RainbowKit connect button we first need to wrap our app in Wagmi and 
 
 And as you can see we need to pass some things like wagmiClient and chains, so add the following:
 
-```
+```typescript
 const { chains, provider } = configureChains(
   [chain.polygonMumbai],
   [
-    alchemyProvider({ apiKey: process.env.NEXT_PUBLIC_ALCHEMY_API }),
-    publicProvider(),
+    jsonRpcProvider({
+      rpc: (chain) =>
+        chain.id === ChainId.Mumbai
+          ? {
+              http: `https://mumbai.rpc.thirdweb.com`,
+            }
+          : null,
+    }),
   ]
 );
 
@@ -60,12 +73,11 @@ const wagmiClient = createClient({
 });
 ```
 
-You need to edit your chain from Mumbai to the chain that you want to use. Since we are using the alchemyProvider, so go to [Alchemy](https://www.alchemy.com/), create a new app for your respective chain and copy the api key! 
-Finally, create a new `.env.local` file, add a new variable called `NEXT_PUBLIC_ALCHEMY_API` and paste the key. Since we are changing the env variables we need to restart the server.
+You need to edit your chain from Mumbai to the chain that you want to use. We are using the thirdweb RPC here, so if you change the chain you need to use the respective RPC as well. You can get details of [RPCs here](https://thirdweb.com/dashboard/rpc).
 
-If you want to customize the theme of the button just pass in `theme={darkTheme()}` in the `RainbowKitProvider` and import darkTheme from rainbowkit:
+If you want to customize the theme of the button just pass `theme={darkTheme()}` in the `RainbowKitProvider` and import darkTheme from rainbowkit:
 
-```
+```typescript
 import {
   darkTheme,
   getDefaultWallets,
@@ -73,22 +85,22 @@ import {
 } from "@rainbow-me/rainbowkit";
 ```
 
-Now let's add the connect button! Go in `pages/index.tsx` and clear out everything in the container div and add a ConnectButton component like this:
+Now let's add the connect button! Go to `pages/index.tsx` and clear out everything in the container div and add a ConnectButton component like this:
 
-```
+```typescript
 <ConnectButton />
 ```
 
 You also need to import it from rainbow kit like this:
 
-```
+```typescript
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 ```
-
 
 # Adding Thirdweb
 
 ## Creating a test drop
+
 We also need to create an NFT drop contract where all the passes will live. So, go to the thirdweb dashboard and create an NFT drop!
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1660645061844/Vvd6Sm7Xm.png align="left")
@@ -106,8 +118,8 @@ Once they are uploaded you will be able to see the NFTs! To learn more about bat
 Fill out the details and deploy the contract!
 
 ### Setting claim phases
-Once you have uploaded your nfts, go to the claim phase and add a claim phase with the values that suit your requirements 
 
+Once you have uploaded your nfts, go to the claim phase and add a claim phase with the values that suit your requirements
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1660746047575/pG3GTqHNk.png align="left")
 
@@ -115,15 +127,20 @@ Once you have uploaded your nfts, go to the claim phase and add a claim phase wi
 
 To use Thirdweb in our app, we need to wrap our app in the ThirdwebProvider as well. I am going to create a custom component which uses the ThirdwebSdk with some props:
 
-```
-function ThirdwebProvider({ wagmiClient, children }: any) {
+```typescript
+function ThirdwebProvider({
+  wagmiClient,
+  children,
+}: {
+  wagmiClient: any;
+  children: React.ReactNode;
+}) {
   const { data: signer } = useSigner();
 
   return (
     <ThirdwebSDKProvider
-      desiredChainId={ChainId.Mumbai}
+      activeChain={ChainId.Mumbai}
       signer={signer as any}
-      provider={wagmiClient.provider}
       queryClient={wagmiClient.queryClient as any}
     >
       {children}
@@ -134,7 +151,7 @@ function ThirdwebProvider({ wagmiClient, children }: any) {
 
 As you can see we are using a custom signer here so we need to import that as well:
 
-```
+```typescript
 import {
     chain,
     configureChains,
@@ -146,27 +163,27 @@ import {
 
 Finally, wrap our app in this provider as well:
 
+```typescript
+<WagmiConfig client={wagmiClient}>
+  <RainbowKitProvider chains={chains} theme={darkTheme()}>
+    <ThirdwebProvider wagmiClient={wagmiClient}>
+      <Component {...pageProps} />
+    </ThirdwebProvider>
+  </RainbowKitProvider>
+</WagmiConfig>
 ```
-  <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider chains={chains}>
-        <ThirdwebProvider wagmiClient={wagmiClient}>
-          <Component {...pageProps} />
-        </ThirdwebProvider>
-      </RainbowKitProvider>
-    </WagmiConfig>
-```
-
 
 Here is what the final `_app.tsx` file should look like:
 
-```
-import "../styles/globals.css";
-import type { AppProps } from "next/app";
+```typescript
 import {
+  darkTheme,
   getDefaultWallets,
   RainbowKitProvider,
 } from "@rainbow-me/rainbowkit";
 import "@rainbow-me/rainbowkit/styles.css";
+import { ChainId, ThirdwebSDKProvider } from "@thirdweb-dev/react";
+import type { AppProps } from "next/app";
 import {
   chain,
   configureChains,
@@ -174,15 +191,21 @@ import {
   useSigner,
   WagmiConfig,
 } from "wagmi";
-import { alchemyProvider } from "wagmi/providers/alchemy";
-import { publicProvider } from "wagmi/providers/public";
-import { ChainId, ThirdwebSDKProvider } from "@thirdweb-dev/react";
+import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
+
+import "../styles/globals.css";
 
 const { chains, provider } = configureChains(
   [chain.polygonMumbai],
   [
-    alchemyProvider({ apiKey: process.env.NEXT_PUBLIC_ALCHEMY_API }),
-    publicProvider(),
+    jsonRpcProvider({
+      rpc: (chain) =>
+        chain.id === ChainId.Mumbai
+          ? {
+              http: `https://mumbai.rpc.thirdweb.com`,
+            }
+          : null,
+    }),
   ]
 );
 
@@ -197,14 +220,19 @@ const wagmiClient = createClient({
   provider,
 });
 
-function ThirdwebProvider({ wagmiClient, children }: any) {
+function ThirdwebProvider({
+  wagmiClient,
+  children,
+}: {
+  wagmiClient: any;
+  children: React.ReactNode;
+}) {
   const { data: signer } = useSigner();
 
   return (
     <ThirdwebSDKProvider
-      desiredChainId={ChainId.Mumbai}
+      activeChain={ChainId.Mumbai}
       signer={signer as any}
-      provider={wagmiClient.provider}
       queryClient={wagmiClient.queryClient as any}
     >
       {children}
@@ -215,7 +243,7 @@ function ThirdwebProvider({ wagmiClient, children }: any) {
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider chains={chains}>
+      <RainbowKitProvider chains={chains} theme={darkTheme()}>
         <ThirdwebProvider wagmiClient={wagmiClient}>
           <Component {...pageProps} />
         </ThirdwebProvider>
@@ -231,33 +259,34 @@ Now that we have Thirdweb configured, let's add a button to claim these NFTs!
 
 In `pages/index.tsx` add the following 2 hooks:
 
-```
-  const contract = useNFTDrop("0xf96e461a89aaF3bD5E8Df7Ed1d67DE1Eb1C9f472");
-  const { address } = useAccount();
+```typescript
+  const { data: contract } = useContract(
+    "0xf96e461a89aaF3bD5E8Df7Ed1d67DE1Eb1C9f472",
+    "nft-drop"
+  );
+  const { address, status } = useAccount();
 ```
 
-Update the useNFTDrop with your contract address and import the hooks:
+Update the useContract hook with your contract address and import the hooks:
 
-```
-import { useNFTDrop } from "@thirdweb-dev/react";
+```typescript
+import { useContract } from "@thirdweb-dev/react";
 import { useAccount } from "wagmi";
 ```
 
-
 Below the ConnectButton now let's add a button if the user is signed and a text if isn't:
 
-```
+```typescript
   {address ? (
-        <button onClick={claim}>Claim</button>
-      ) : (
-        <p>Please connect your wallet</p>
-      )}
+    <button onClick={claim}>Claim</button>
+  ) : (
+    <p>Please connect your wallet</p>
+  )}
 ```
 
 As you can see we are using a claim function so let's create that pretty simple function:
 
-
-```
+```typescript
   const claim = async () => {
     try {
       if (contract) {
@@ -269,12 +298,11 @@ As you can see we are using a claim function so let's create that pretty simple 
   };
 ```
 
-
-Now our app works totally fine! 🎉
-
+Now our app works fine! 🎉
 
 # Conclusion
-Hope you learnt how to make an amazing wallet connect button with rainbowkit and integrate it with thirdweb to create an NFT drop and allow users to claim it!
+
+Hope you learned how to make an amazing wallet connect button with rainbowkit and integrate it with thirdweb to create an NFT drop and allow users to claim it!
 
 ## Useful links
 
@@ -282,4 +310,4 @@ Hope you learnt how to make an amazing wallet connect button with rainbowkit and
 
 [RainbowKit](https://www.rainbowkit.com/)
 
-[Thirdweb](https://thirdweb.com/)
+[thirdweb](https://thirdweb.com/)
