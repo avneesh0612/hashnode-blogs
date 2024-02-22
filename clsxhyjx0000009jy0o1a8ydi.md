@@ -12,7 +12,7 @@ tags: solana, nft, farcaster, farcaster-frames
 
 ## Introduction
 
-In this blog, we will create a Farcaster frame that allows users to mint NFTs on solana directly to their wallets or email after recasting and liking the cast. Try out the [live demo here](https://warpcast.com/avneesh/0x7dc70d75)!
+In this blog, we will create a Farcaster frame that allows users to mint NFTs on solana directly to their wallets or email after recasting and liking the cast. Try out the [live demo here](https://warpcast.com/avneesh/0x7dc70d75)! Check out the [video demo here](https://twitter.com/avneesh0612/status/1760722748429472132).
 
 ### What is a Farcaster frame?
 
