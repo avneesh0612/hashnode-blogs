@@ -23,13 +23,13 @@ A Frame empowers you to transform any cast into an interactive application. Seam
 We're going to use various tools to build this:
 
 - [Next.js](https://nextjs.org/): We'll use next.js as our framework for creating the frame.
-- [Crossmint](https://www.crossmint.com/): To mint NFTs on solana to the user's wallet address or email, we'll use crossmint.
+- [Crossmint](https://www.crossmint.com/?utm_source=personal&utm_medium=blog&utm_campaign=avneesh): To mint NFTs on solana to the user's wallet address or email, we'll use crossmint.
 - [Neynar](https://neynar.com/): We will use neynar to check whether the user has recasted and liked the cast.
 - [Onchainkit](https://onchainkit.xyz/): We will use the onchainkit to create the frame, and get the message from the frame on our server.
 
 ## Setting up our NFT collection
 
-Head over to [Crossmint](https://staging.crossmint.com/) (staging for devnet), then head over to the Collections tab and click on "New Collection".
+Head over to [Crossmint](https://staging.crossmint.com/?utm_source=personal&utm_medium=blog&utm_campaign=avneesh) (staging for devnet), then head over to the Collections tab and click on "New Collection".
 
 ![Create a new collection on crossmint](https://cdn.hashnode.com/res/hashnode/image/upload/v1708609039219/e217451c-f10e-4dbd-aa67-ed0769aa7a88.png align="left")
 
@@ -526,7 +526,7 @@ This guide taught us how to create a Farcaster frame that allows users to mint N
 
 [Farcaster](https://farcaster.com/)
 
-[Crossmint](https://crossmint.com/)
+[Crossmint](https://crossmint.com/?utm_source=personal&utm_medium=blog&utm_campaign=avneesh)
 
 [Neynar](https://neynar.com/)
 
